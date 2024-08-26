@@ -33,7 +33,7 @@
             <li><a class="text-black hover:bg-white rounded-full p-4" href="#home">Home</a></li>
             <li><a class="text-black hover:bg-white rounded-full p-4 hover:text-blue-500" href="#about-us">About Us</a></li>
             <li><a class="text-black hover:bg-white rounded-full p-4 hover:text-blue-600" href="#services">Services</a></li>
-            <li><a class="text-black hover:bg-white rounded-full p-4 hover:text-blue-600" href="#pricing">Pricing</a></li>
+            <li><a class="text-black hover:bg-white rounded-full p-4 hover:text-blue-600" href="#usp">Why Us?</a></li>
             <li><a class="text-black hover:bg-white rounded-full p-4 hover:text-blue-600" href="#contact">Contact</a></li>
         </ul>
 
@@ -72,7 +72,7 @@
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#pricing">Pricing</a>
+                            href="#usp">Why Us?</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
@@ -88,6 +88,7 @@
     </div>
 
     <main>
+<!-- home -->
         <section id="home" class="ma ra lg:tc">
             <div class="a e sa ab">
                 <div class="f">
@@ -107,6 +108,7 @@
             </div>
         </section>
 
+<!-- about us -->
         <section id="about-us" class="va lg:uc za lg:wc">
             <div class="a e sa">
                 <div class="da ab i lg:f">
@@ -134,8 +136,7 @@
             </div>
         </section>
 
-
-
+<!-- services -->
         <section id="services" class="services-container container over-flow-x-auto space-x-8 snap-mandatory va lg:uc text-black">
             <div class="a e sa">
                 <div class="da lg:ab i lg:f text-center">
@@ -144,21 +145,21 @@
                 <div class="flex overflow-x-auto space-x-8 snap-x snap-mandatory">
                     <div class="service-card panel flex-none snap-start text-center">
                         <img src="./ss.jpg" alt="Exterior Shine Package" class="mx-auto">
-                        <div class="ba lg:xc mt-4">
+                        <div class="ba lg:xc mt-4 mb-4">
                             <h3 class="cb sm:hb kb">Exterior Shine $80</h3>
                         </div>
                     </div>
         
                     <div class="service-card panel flex-none snap-start text-center">
                         <img src="./ss.jpg" alt="Interior Shine Package" class="mx-auto">
-                        <div class="ba lg:yc mt-4">
+                        <div class="ba lg:yc mt-4 mb-4">
                             <h3 class="cb sm:hb kb">Interior Shine $80</h3>
                         </div>
                     </div>
         
                     <div class="service-card panel flex-none snap-start text-center">
                         <img src="./ss.jpg" alt="Super Shine Package" class="mx-auto">
-                        <div class="ba lg:xc mt-4">
+                        <div class="ba lg:xc mt-4 mb-4">
                             <h3 class="cb sm:hb kb">Super Shine $190</h3>
                         </div>
                     </div>
@@ -166,8 +167,8 @@
             </div>
         </section>
 
-
-        <section id="pricing" class="va lg:uc _a lg:zc">
+<!-- usp -->
+        <section id="usp" class="va lg:uc _a lg:zc">
             <div class="a e ta sm:sa">
                 <div class="da ab i lg:f text-black">
                     <h2 class="hb sm:db lb">Why Choose Us?</h2>
@@ -253,6 +254,7 @@
             </div>
         </section>
 
+<!-- contact -->
         <section id="contact" class="pa ra lg:tc flex items-center justify-center">
             <div class="a e sa">
                 <div class="m lg:fc flex flex-col items-center justify-center ab lg:jc text-center">
@@ -263,17 +265,18 @@
                                 Reach out to us today!</p>
                         </div>
                         <div
-                            class="l y lg:qc flex flex-col lg:flex-row items-center justify-center x ja space-y-4 lg:space-y-0 lg:space-x-4">
+                            class="l y lg:qc flex flex-col lg:flex-row items-center justify-center x ja space-y-4 lg:space-y-0 lg:space-x-4 text-center">
                             <a href="mailto:pnellysshineservice@gmail.com"
-                                class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb">Email Us</a>
+                                class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb text-center">Email Us</a>
                             <a href="tel:+1234567890"
-                                class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb">Call Us</a>
+                                class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb text-center">Call Us</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+<!-- footer -->
         <footer class="ya lg:vc border-b border-white">
             <div class="a e sa ab">
                 <div class="l w md:gc y ka md:hc md:ja ib rb j text-black">
@@ -292,6 +295,7 @@
     </main>
 </body>
 
+<!-- mobile hamburger functionality -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const burger = document.querySelectorAll('.navbar-burger');
@@ -332,7 +336,7 @@
     });
 </script>
 
-<!-- GSAP & ScrollTrigger -->
+<!-- gsap & scroll trigger -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
