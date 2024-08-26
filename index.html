@@ -142,7 +142,8 @@
         </section>
 
         <!-- services -->
-        <section id="services" class="services-container container over-flow-x-auto space-x-8 snap-mandatory va lg:uc text-black">
+        <section id="services"
+            class="services-container container over-flow-x-auto space-x-8 snap-mandatory va lg:uc text-black">
             <div class="a e sa">
                 <div class="da lg:ab i lg:f text-center">
                     <h2 class="hb sm:db lb text-center">Our Services</h2>
@@ -269,12 +270,12 @@
                             <p class="fb ob text-black">Have questions or want to book a service? We're here to help.
                                 Reach out to us today!</p>
                         </div>
-                            <a href="mailto:pnellysshineservice@gmail.com"
-                                class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb text-center w-full lg:w-auto">Email
-                                Us</a>
-                            <a href="tel:+1234567890"
-                                class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb text-center w-full lg:w-auto">Call
-                                Us</a>
+                        <a href="mailto:pnellysshineservice@gmail.com"
+                            class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb text-center w-full lg:w-auto">Email
+                            Us</a>
+                        <a href="tel:+1234567890"
+                            class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb text-center w-full lg:w-auto">Call
+                            Us</a>
                     </div>
                 </div>
             </div>
@@ -305,40 +306,48 @@
     document.addEventListener('DOMContentLoaded', function () {
         const burger = document.querySelectorAll('.navbar-burger');
         const menu = document.querySelectorAll('.navbar-menu');
+        const navLinks = document.querySelectorAll('.navbar-menu a');
 
+        // Function to toggle the menu
+        const toggleMenu = () => {
+            for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden');
+            }
+        };
+
+        // Burger menu click
         if (burger.length && menu.length) {
             for (var i = 0; i < burger.length; i++) {
-                burger[i].addEventListener('click', function () {
-                    for (var j = 0; j < menu.length; j++) {
-                        menu[j].classList.toggle('hidden');
-                    }
+                burger[i].addEventListener('click', toggleMenu);
+            }
+        }
+
+        // Close menu when a nav link is clicked
+        if (navLinks.length) {
+            for (var i = 0; i < navLinks.length; i++) {
+                navLinks[i].addEventListener('click', function () {
+                    toggleMenu();
                 });
             }
         }
 
+        // Close menu when clicking the close button or backdrop
         const close = document.querySelectorAll('.navbar-close');
         const backdrop = document.querySelectorAll('.navbar-backdrop');
 
         if (close.length) {
             for (var i = 0; i < close.length; i++) {
-                close[i].addEventListener('click', function () {
-                    for (var j = 0; j < menu.length; j++) {
-                        menu[j].classList.toggle('hidden');
-                    }
-                });
+                close[i].addEventListener('click', toggleMenu);
             }
         }
 
         if (backdrop.length) {
             for (var i = 0; i < backdrop.length; i++) {
-                backdrop[i].addEventListener('click', function () {
-                    for (var j = 0; j < menu.length; j++) {
-                        menu[j].classList.toggle('hidden');
-                    }
-                });
+                backdrop[i].addEventListener('click', toggleMenu);
             }
         }
     });
+
 </script>
 
 <!-- gsap & scroll trigger -->
