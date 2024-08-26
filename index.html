@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <link rel="stylesheet" href="./1.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Pnelly's Shine Service</title>
+</head>
+
+<body class="bb vb nb">
+    <nav class="relative flex justify-between items-center bg-grad border-b border-white">
+        <a class="text-3xl font-bold leading-none" href="#">
+            <img src="./ilogo.png" alt="logo" class="h-40 w-auto p-0 m-0">
+        </a>
+
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-blue-600 p-3">
+                <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <ul
+            class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class="text-black hover:bg-white rounded-full p-4" href="#home">Home</a></li>
+            <li><a class="text-black hover:bg-white rounded-full p-4 hover:text-blue-500" href="#about-us">About Us</a></li>
+            <li><a class="text-black hover:bg-white rounded-full p-4 hover:text-blue-600" href="#services">Services</a></li>
+            <li><a class="text-black hover:bg-white rounded-full p-4 hover:text-blue-600" href="#pricing">Pricing</a></li>
+            <li><a class="text-black hover:bg-white rounded-full p-4 hover:text-blue-600" href="#contact">Contact</a></li>
+        </ul>
+
+        <a class="hidden lg:inline-block py-4 px-6 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-xl transition duration-200 mr-2" href="#book-now">Book Now</a>
+    </nav>
+
+    <div class="navbar-menu relative z-50 hidden mb-0">
+        <div class="navbar-backdrop fixed inset-0 opacity-25"></div>
+
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#"><img src="./logo.png" alt="logo" class="h-40 p-0 m-0"></a>
+
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#home">Home</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#about-us">About Us</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#services">Services</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#pricing">Pricing</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#contact">Contact</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 font-bold text-white bg-blue-600 rounded-full p-3 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#book-now">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section id="home" class="ma ra lg:tc">
+            <div class="a e sa ab">
+                <div class="f">
+                    <div class="ba g">
+                        <h4 class="mt-0 mb-0 cb sm:gb kb">Give Your Vehicle The Care It Deserves</h4>
+
+                        <img src="./ilogo.png" class="mx-auto">
+                        <p class="sm:dc lg:ec xl:_c e eb sm:fb ob text-black">We come to you and make your car shine!
+                        </p>
+                    </div>
+                    <a href="#book-now" class="ta ua na hover:bc yb zb _b wb hover:cc v hover:ac pb kb eb la k">Book
+                        Now</a>
+                </div>
+                <img class="e xl:bd h" src="./pnelly.jpeg" alt="Drone">
+                <p class="lg:nc e fb sm:gb kb ob text-black">At Pnelly's Shine Service, we come to you and make your car
+                    shine, offering top-notch care for your vehicle wherever you are!</p>
+            </div>
+        </section>
+
+        <section id="about-us" class="va lg:uc za lg:wc">
+            <div class="a e sa">
+                <div class="da ab i lg:f">
+                    <h4 class="gb kb ob text-black">Expert Car Detailing</h4>
+                    <h2 class="hb sm:db lb">Shine Like Never Before</h2>
+                    <p class="sm:dc lg:ec xl:oc e eb sm:fb ob text-black">Experience top-tier car care with our premium
+                        detailing services. From interior clean-ups to exterior shines, we've got your vehicle covered.
+                    </p>
+                </div>
+                <div class="xl:ad e l x y">
+                    <button type="button" class="b l x wa xa oa la ga ib kb qb xb hover:cc yb zb v hover:ac">
+                        <span>See Our Work</span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="p t c" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1511204579483-e5c2b1d69acd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1871&q=80"
+                        alt="Car Detailing">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="services" class="va lg:uc text-black">
+            <div class="a e sa">
+                <div class="da lg:ab i lg:f text-center">
+                    <h2 class="hb sm:db lb">Premium Detailing Services</h2>
+                    <p class="sm:dc lg:ec xl:oc lg:e eb sm:fb ob text-black">At Pnelly's Shine Service, we offer a range of detailing packages designed to keep your vehicle in pristine condition, inside and out.</p>
+                </div>
+                <div class="services-container container flex overflow-x-auto space-x-8 snap-x snap-mandatory">
+                    <div class="service-card panel flex-none snap-start text-center">
+                        <img src="./ss.jpg" alt="Exterior Shine Package" class="mx-auto">
+                        <div class="ba lg:xc mt-4">
+                            <h3 class="cb sm:hb kb">Exterior Shine</h3>
+                            <p class="eb ob text-black">
+                                For just $80, your vehicle will look its best.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="service-card panel flex-none snap-start text-center">
+                        <img src="./ss.jpg" alt="Interior Shine Package" class="mx-auto">
+                        <div class="ba lg:yc mt-4">
+                            <h3 class="cb sm:hb kb">Interior Shine</h3>
+                            <p class="eb ob text-black">
+                                For $80, we ensure your car's interior is spotless and fresh.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="service-card panel flex-none snap-start text-center">
+                        <img src="./ss.jpg" alt="Super Shine Package" class="mx-auto">
+                        <div class="ba lg:xc mt-4">
+                            <h3 class="cb sm:hb kb">Super Shine</h3>
+                            <p class="eb ob text-black">
+                                For $190, your vehicle will look and feel like new, inside and out.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="pricing" class="va lg:uc _a lg:zc">
+            <div class="a e ta sm:sa">
+                <div class="da ab i lg:f text-black">
+                    <h2 class="hb sm:db lb">Why Choose Us?</h2>
+                    <p class="sm:dc lg:ec xl:oc e eb sm:fb ob text-black">At Pnelly's Shine Service, we offer top-notch
+                        detailing services that ensure your car looks its best. Here’s what sets us apart.</p>
+                </div>
+                <div class="m sm:fc lg:pc _">
+                    <div class="ha ab">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="q u e qb" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"
+                                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"
+                                d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <div class="ba text-black">
+                            <h5 class="cb kb text-black">Mobile Convenience</h5>
+                            <p class="eb ob text-black">We bring our services directly to you, offering on-site
+                                detailing that fits your schedule. Your convenience is our priority.</p>
+                        </div>
+                    </div>
+                    <div class="ha ab">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="q u e qb" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <div class="ba text-black">
+                            <h5 class="cb kb text-black">High-Quality Products</h5>
+                            <p class="eb ob text-black">We use premium products for all our detailing services, ensuring
+                                a superior shine and long-lasting protection for your vehicle.</p>
+                        </div>
+                    </div>
+                    <div class="ha ab">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="q u e qb" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                        <div class="ba text-black">
+                            <h5 class="cb kb text-black">Expert Technicians</h5>
+                            <p class="eb ob text-black">Our team consists of highly trained professionals who are
+                                passionate about cars and committed to delivering exceptional results every time.</p>
+                        </div>
+                    </div>
+                    <div class="ha ab">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="q u e qb" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                        <div class="ba text-black">
+                            <h5 class="cb kb text-black">Attention to Detail</h5>
+                            <p class="eb ob text-black">We pay meticulous attention to every aspect of the detailing
+                                process, ensuring that no spot is left untouched.</p>
+                        </div>
+                    </div>
+                    <div class="ha ab">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="q u e qb" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"
+                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <div class="ba text-black">
+                            <h5 class="cb kb text-black">Affordable Pricing</h5>
+                            <p class="eb ob text-black">We offer competitive pricing without compromising on quality,
+                                making our premium detailing services accessible to everyone.</p>
+                        </div>
+                    </div>
+                    <div class="ha ab">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="q u e qb" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"
+                                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                        <div class="ba text-black">
+                            <h5 class="cb kb text-black">Customer Satisfaction</h5>
+                            <p class="eb ob text-black">Our ultimate goal is to ensure that every customer leaves with a
+                                smile, knowing their vehicle has received the best care possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="pa ra lg:tc flex items-center justify-center">
+            <div class="a e sa">
+                <div class="m lg:fc flex flex-col items-center justify-center ab lg:jc text-center">
+                    <div class="ia">
+                        <div class="ba text-black">
+                            <h2 class="gb sm:db lb text-black">Get in Touch with Pnelly's Shine Service</h2>
+                            <p class="fb ob text-black">Have questions or want to book a service? We're here to help.
+                                Reach out to us today!</p>
+                        </div>
+                        <div
+                            class="l y lg:qc flex flex-col lg:flex-row items-center justify-center x ja space-y-4 lg:space-y-0 lg:space-x-4">
+                            <a href="mailto:pnellysshineservice@gmail.com"
+                                class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb">Email Us</a>
+                            <a href="tel:+1234567890"
+                                class="k la wa xa oa hover:bc qb hover:pb wb yb zb hover:cc eb kb">Call Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="ya lg:vc border-b border-white">
+            <div class="a e sa ab">
+                <div class="l w md:gc y ka md:hc md:ja ib rb j text-black">
+                    <p>Copyright © 2024 Pnelly's Shine Service. All rights reserved.
+                        Designed by <a class="sb ub" href="https:/webstaxinc.vercel.app" rel="nofollow"
+                            target="_blank">Webstax Inc.</a></p>
+                </div>
+                <div class="sm:ec lg:oc e text-black">
+                    <p class="jb tb text-black">All booking made through the website or via direct contact through
+                        phone, email or
+                        text, are subject to our <a href="/terms" target="_blank" class="sb ub">Terms & Conditions.</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.navbar-menu');
+
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        const close = document.querySelectorAll('.navbar-close');
+        const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+        if (close.length) {
+            for (var i = 0; i < close.length; i++) {
+                close[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        if (backdrop.length) {
+            for (var i = 0; i < backdrop.length; i++) {
+                backdrop[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    });
+</script>
+
+<!-- GSAP & ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    let panels = gsap.utils.toArray(".panel");
+
+    gsap.to(panels, {
+        xPercent: -100 * (panels.length - 1),
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".services-container",
+            pin: true,
+            scrub: 1,
+            end: "+=2500", 
+        }
+    });
+</script>
+
+</html>
