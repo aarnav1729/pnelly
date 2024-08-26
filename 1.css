@@ -14,6 +14,22 @@
   --tw-content: '';
 }
 
+#back-to-top {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+    background: linear-gradient(180deg, #80c0ff 0%, #fbb6ff 100%);
+}
+
+#back-to-top.show {
+    display: block;
+    opacity: 1;
+}
+
+#back-to-top.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 html {
   line-height: 1.5;
@@ -39,7 +55,6 @@ hr {
   font-family: 'Russo One', sans-serif !important;
 }
 
-/* Ensure the container takes full width and allows horizontal scrolling */
 .services-container {
     display: flex;
     overflow-x: auto;
@@ -50,14 +65,12 @@ hr {
     white-space: nowrap;
 }
 
-/* Each service card should take a consistent width */
 .service-card {
     flex: 0 0 auto;
-    width: 80%; /* Adjust this to control the visible portion of each service */
+    width: 80%; 
     scroll-snap-align: start;
 }
 
-/* Hide horizontal scrollbar (optional) */
 .services-container::-webkit-scrollbar {
     display: none;
 }

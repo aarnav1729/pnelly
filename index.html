@@ -299,6 +299,14 @@
             </div>
         </footer>
     </main>
+    <!-- btt button -->
+    <a href="#top" id="back-to-top"
+        class="hidden fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
 </body>
 
 <!-- mobile hamburger functionality -->
@@ -346,6 +354,28 @@
                 backdrop[i].addEventListener('click', toggleMenu);
             }
         }
+    });
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const backToTopButton = document.getElementById('back-to-top');
+        const navbar = document.querySelector('nav');
+
+        // Function to show or hide the back-to-top button
+        const toggleBackToTopButton = () => {
+            if (window.scrollY > navbar.offsetHeight) {
+                backToTopButton.classList.add('show');
+                backToTopButton.classList.remove('hide');
+            } else {
+                backToTopButton.classList.remove('show');
+                backToTopButton.classList.add('hide');
+            }
+        };
+
+        // Listen for scroll events
+        window.addEventListener('scroll', toggleBackToTopButton);
     });
 
 </script>
